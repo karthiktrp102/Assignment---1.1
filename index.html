@@ -1,0 +1,312 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Asignment - 1 Responsive Website</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque&display=swap" rel="stylesheet">
+	</head>
+    <style>
+        body{
+            margin: 0px;
+            font-family: 'Darker Grotesque', sans-serif;
+            box-sizing: border-box;
+        }
+        
+        container{
+            margin: 0;
+        }
+        
+       
+        
+        .logo{
+            float: left;   
+        }
+        
+        .logo img{
+            width: 50px;
+            height: 50px;
+            border: 2px solid red;
+            border-radius: 10px;
+            margin: 5px;
+        }
+        
+        
+        .title{
+            padding: 200px;
+            color: black;
+            text-align: center;
+            font-size: 70px;
+        }
+        
+        
+        #about{
+            width: 100%;
+            height: 400px;
+            
+        }
+        
+        #services{
+            margin: 0px;
+            width: 100%;
+            height: auto;
+            background-color: red;
+            color:white !important;
+            font-weight: 500;
+        }
+        
+        .backimg{
+             background-image: url("4.jpg");
+             background-size:cover;
+             height: 750px;
+             width: 100%;
+        }
+        
+        .toggle{
+            float: right;
+            display: none;
+        }
+        
+        .toggle a{
+            text-decoration: none;
+            color: red;
+            font-size: 25px;
+            margin-left: 50px;
+        }
+        
+        footer{
+            width: 100%;
+            height: 100px;
+            background-color: #000000;
+            color: yellow;
+        }
+        
+        footer p{
+            padding: 20px;
+            text-align: center;
+            font-size: 25px;
+        }
+        
+        .display-container{
+            position: relative;
+        }
+        
+        .content{
+            text-align: center;
+            padding: 30px;   
+            font-size: 25px;
+        }
+        
+        .content1{
+            text-align: justify;
+            margin-left: 250px;
+            margin-right: 250px;
+            font-size: 25px;
+        }
+        
+        .shead{
+            text-align: center;
+            padding: 20px;   
+            font-size: 25px;
+        }
+        
+        .serve{
+            margin: 0px;
+        }
+        
+        .row:after{
+            content: "";
+            display: table;
+            clear: both;
+        }
+        
+        .col{
+            width: 33.3%;  
+            float: left;
+            height: auto;
+            text-align: center;
+            
+        }   
+        
+        .col img{
+            width: 200px;
+            height: 200px;
+            border: 3px solid red;
+            border-radius: 15px;
+        }
+        
+        .col p{
+            text-align: justify;
+            padding: 50px;
+            font-size: 25px;
+        }
+        
+        @media  screen and (max-width:480px){
+            .toggle{
+                display: contents !important;
+            }
+        
+            .mitems{
+                display: none;
+            }        
+        }
+        
+        @media  screen and (max-width:1200px){
+            #about{
+                height: auto;
+            }
+            
+            .content{
+                padding: 25px;
+            }    
+            
+        .content1{
+                width: 90%;
+                margin-left: 20px;
+                margin-right: 10px;
+            }
+        }
+        
+        @media screen and (max-width: 1100px) {
+            .col{
+            width: 100%;
+            }
+        
+            .title{
+                padding: 60px;
+                font-size: 20px;
+            }
+        
+        }
+        
+        #close{
+            display: none;
+        }
+        
+        #show:target {
+            display:inline-grid;
+        }
+
+        
+#hamnav {
+  width: 100%;
+  background: #000;
+  opacity: 0.8;            
+  position: fixed;
+  top: 0;
+}
+
+
+#hamnav label, #hamburger { display: none; }
+
+
+#hamitems { display: flex; }
+#hamitems a {
+  width: 15%;
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  font-size: 25px;    
+}
+#hamitems a:hover {
+  border-bottom: 2px solid red;
+}
+
+
+@media screen and (max-width: 768px){
+  #hamnav label { 
+    display: inline-block; 
+    color: white;
+    background: #000;
+    
+    font-style: normal;
+    font-size: 1.2em;
+    padding: 10px;
+    margin-left: 360px;
+    margin-top: 10px;  
+  }
+
+  #hamitems a {
+    box-sizing: border-box;
+    display: block;
+    
+    width: 100%;
+    border-top: 1px solid #333;
+    padding: 20px;  
+  }
+    
+    
+  #hamitems { display: none; }
+  #hamnav input:checked ~ #hamitems { display: block; }
+}       
+        
+    </style>    
+	<body>
+    <div class="container">    
+     <div class="backimg" id="home">
+         <nav id="hamnav">
+           <div class="logo">
+                <a href="#"><img src="7.png"></a>
+           </div>     
+            <label for="hamburger">&#9776;</label>
+            <input type="checkbox" id="hamburger"/>
+ 
+           <div id="hamitems">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            
+           </div>
+         </nav>
+        <div class="title">
+            <h1>Experiments with Google</h1>
+        </div>    
+         
+         
+     </div>   
+     <div id="about">
+         <div class="content">    
+         <h1>ABOUT</h1>
+         </div>    
+         <div class="content1">    
+         <p>Chrome Experiments is a showcase of work by coders who are pushing the 
+             boundaries of web technology, creating beautiful, unique web experiences. 
+             You'll find helpful links throughout the site for creating your own experiments, 
+             and you can also explore resources like WebGL Globe and our workshop of tools.
+              </p>
+         </div>     
+     </div> 
+     <div id="services" class="serve">
+         <div class="shead">
+             <h1>Google Experiments</h1>
+         </div>     
+     <div class="row">
+            <div class="col">
+                
+                <img src="1.jpg">
+                <h1>Nature</h1>
+                <p>The words nature and natural are used for all the things that are normally not made by humans. Things like weather, organisms, landforms, celestial bodies and much more are part of nature. Scientists study the way the parts of nature work. Things that have been made by people are said to be man-made or called artifacts.There are natural sciences that study different parts of nature, for example the science of ecology is about plants and animals as a whole, while biology studies every type of living thing.From one point of view, humans are a prime example of nature, and are the most widely studied natural inhabitants of the planet earth. Humans interact with each other in their natural environment on a constant basis.</p>
+            </div>
+         <div class="col">
+                
+                <img src="2.jpg">
+                <h1>Sea</h1>
+                <p>The sea, the world ocean, or simply the ocean is the connected body of salty water that covers about 71% of Earth's surface (361,132,000 square kilometres [139,434,000 sq mi]), with a total volume of roughly 1,332,000,000 cubic kilometres [320,000,000 cu mi].[1] It moderates Earth's climate and has important roles in the water cycle, carbon cycle, and nitrogen cycle. It has been travelled and explored since ancient times, while the scientific study of the sea—oceanography—dates broadly from the voyages of Captain James Cook to explore the Pacific Ocean between 1768 and 1779. The word sea is also used to denote smaller, partly landlocked sections of the ocean and certain large, entirely landlocked, saltwater lakes, such as the Caspian Sea and the Dead Sea.</p>
+            </div>
+         <div class="col">
+                
+                <img src="3.jpg">
+                <h1>Leaf</h1>
+                <p>A leaf (plural leaves) is the principal lateral appendage of the vascular plant stem,[1] usually borne above ground and specialized for photosynthesis. The leaves and stem together form the shoot.[2] Leaves are collectively referred to as foliage, as in "autumn foliage".[3][4] In most leaves, the primary photosynthetic tissue, the palisade mesophyll, is located on the upper side of the blade or lamina of the leaf[1] but in some species, including the mature foliage of Eucalyptus,[5] palisade mesophyll is present on both sides and the leaves are said to be isobilateral. </p>
+            </div>
+     </div>
+     
+     <footer>
+         <p>&copy; Google</p>
+     </footer>  
+    </div>    
+  </div>
+ </body>
+</html>
