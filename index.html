@@ -1,312 +1,361 @@
-<!DOCTYPE HTML>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Asignment - 1 Responsive Website</title>
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque&display=swap" rel="stylesheet">
-	</head>
-    <style>
-        body{
-            margin: 0px;
-            font-family: 'Darker Grotesque', sans-serif;
-            box-sizing: border-box;
-        }
-        
-        container{
-            margin: 0;
-        }
-        
-       
-        
-        .logo{
-            float: left;   
-        }
-        
-        .logo img{
-            width: 50px;
-            height: 50px;
-            border: 2px solid red;
-            border-radius: 10px;
-            margin: 5px;
-        }
-        
-        
-        .title{
-            padding: 200px;
-            color: black;
-            text-align: center;
-            font-size: 70px;
-        }
-        
-        
-        #about{
-            width: 100%;
-            height: 400px;
-            
-        }
-        
-        #services{
-            margin: 0px;
-            width: 100%;
-            height: auto;
-            background-color: red;
-            color:white !important;
-            font-weight: 500;
-        }
-        
-        .backimg{
-             background-image: url("4.jpg");
-             background-size:cover;
-             height: 750px;
-             width: 100%;
-        }
-        
-        .toggle{
-            float: right;
-            display: none;
-        }
-        
-        .toggle a{
-            text-decoration: none;
-            color: red;
-            font-size: 25px;
-            margin-left: 50px;
-        }
-        
-        footer{
-            width: 100%;
-            height: 100px;
-            background-color: #000000;
-            color: yellow;
-        }
-        
-        footer p{
-            padding: 20px;
-            text-align: center;
-            font-size: 25px;
-        }
-        
-        .display-container{
-            position: relative;
-        }
-        
-        .content{
-            text-align: center;
-            padding: 30px;   
-            font-size: 25px;
-        }
-        
-        .content1{
-            text-align: justify;
-            margin-left: 250px;
-            margin-right: 250px;
-            font-size: 25px;
-        }
-        
-        .shead{
-            text-align: center;
-            padding: 20px;   
-            font-size: 25px;
-        }
-        
-        .serve{
-            margin: 0px;
-        }
-        
-        .row:after{
-            content: "";
-            display: table;
-            clear: both;
-        }
-        
-        .col{
-            width: 33.3%;  
-            float: left;
-            height: auto;
-            text-align: center;
-            
-        }   
-        
-        .col img{
-            width: 200px;
-            height: 200px;
-            border: 3px solid red;
-            border-radius: 15px;
-        }
-        
-        .col p{
-            text-align: justify;
-            padding: 50px;
-            font-size: 25px;
-        }
-        
-        @media  screen and (max-width:480px){
-            .toggle{
-                display: contents !important;
-            }
-        
-            .mitems{
-                display: none;
-            }        
-        }
-        
-        @media  screen and (max-width:1200px){
-            #about{
-                height: auto;
-            }
-            
-            .content{
-                padding: 25px;
-            }    
-            
-        .content1{
-                width: 90%;
-                margin-left: 20px;
-                margin-right: 10px;
-            }
-        }
-        
-        @media screen and (max-width: 1100px) {
-            .col{
-            width: 100%;
-            }
-        
-            .title{
-                padding: 60px;
-                font-size: 20px;
-            }
-        
-        }
-        
-        #close{
-            display: none;
-        }
-        
-        #show:target {
-            display:inline-grid;
-        }
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="circle.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+  <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="style.css">
+  <meta name="keywords" content="footer, address, phone, icons" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+<ul>
+<li><b class="title"> Kloud one </b> 
+  <li><a  href="#home">Browse</a></li>
+  <li><a href="#news">All-Exclusive</a></li>
+  <li><a href="#contact">Docs</a></li>
+  
+  <li style="float:right;margin-right: 30px;"><button class="btn3">Account</button></li>
+</ul>
 
-        
-#hamnav {
-  width: 100%;
-  background: #000;
-  opacity: 0.8;            
-  position: fixed;
-  top: 0;
-}
+<br>
 
 
-#hamnav label, #hamburger { display: none; }
-
-
-#hamitems { display: flex; }
-#hamitems a {
-  width: 15%;
-  padding: 10px;
-  color: white;
-  text-decoration: none;
-  text-align: center;
-  font-size: 25px;    
-}
-#hamitems a:hover {
-  border-bottom: 2px solid red;
-}
-
-
-@media screen and (max-width: 768px){
-  #hamnav label { 
-    display: inline-block; 
-    color: white;
-    background: #000;
-    
-    font-style: normal;
-    font-size: 1.2em;
-    padding: 10px;
-    margin-left: 360px;
-    margin-top: 10px;  
-  }
-
-  #hamitems a {
-    box-sizing: border-box;
-    display: block;
-    
-    width: 100%;
-    border-top: 1px solid #333;
-    padding: 20px;  
-  }
-    
-    
-  #hamitems { display: none; }
-  #hamnav input:checked ~ #hamitems { display: block; }
-}       
-        
-    </style>    
-	<body>
-    <div class="container">    
-     <div class="backimg" id="home">
-         <nav id="hamnav">
-           <div class="logo">
-                <a href="#"><img src="7.png"></a>
-           </div>     
-            <label for="hamburger">&#9776;</label>
-            <input type="checkbox" id="hamburger"/>
- 
-           <div id="hamitems">
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#services">Services</a>
-            
-           </div>
-         </nav>
-        <div class="title">
-            <h1>Experiments with Google</h1>
-        </div>    
-         
-         
-     </div>   
-     <div id="about">
-         <div class="content">    
-         <h1>ABOUT</h1>
-         </div>    
-         <div class="content1">    
-         <p>Chrome Experiments is a showcase of work by coders who are pushing the 
-             boundaries of web technology, creating beautiful, unique web experiences. 
-             You'll find helpful links throughout the site for creating your own experiments, 
-             and you can also explore resources like WebGL Globe and our workshop of tools.
-              </p>
-         </div>     
-     </div> 
-     <div id="services" class="serve">
-         <div class="shead">
-             <h1>Google Experiments</h1>
-         </div>     
-     <div class="row">
-            <div class="col">
-                
-                <img src="1.jpg">
-                <h1>Nature</h1>
-                <p>The words nature and natural are used for all the things that are normally not made by humans. Things like weather, organisms, landforms, celestial bodies and much more are part of nature. Scientists study the way the parts of nature work. Things that have been made by people are said to be man-made or called artifacts.There are natural sciences that study different parts of nature, for example the science of ecology is about plants and animals as a whole, while biology studies every type of living thing.From one point of view, humans are a prime example of nature, and are the most widely studied natural inhabitants of the planet earth. Humans interact with each other in their natural environment on a constant basis.</p>
-            </div>
-         <div class="col">
-                
-                <img src="2.jpg">
-                <h1>Sea</h1>
-                <p>The sea, the world ocean, or simply the ocean is the connected body of salty water that covers about 71% of Earth's surface (361,132,000 square kilometres [139,434,000 sq mi]), with a total volume of roughly 1,332,000,000 cubic kilometres [320,000,000 cu mi].[1] It moderates Earth's climate and has important roles in the water cycle, carbon cycle, and nitrogen cycle. It has been travelled and explored since ancient times, while the scientific study of the sea—oceanography—dates broadly from the voyages of Captain James Cook to explore the Pacific Ocean between 1768 and 1779. The word sea is also used to denote smaller, partly landlocked sections of the ocean and certain large, entirely landlocked, saltwater lakes, such as the Caspian Sea and the Dead Sea.</p>
-            </div>
-         <div class="col">
-                
-                <img src="3.jpg">
-                <h1>Leaf</h1>
-                <p>A leaf (plural leaves) is the principal lateral appendage of the vascular plant stem,[1] usually borne above ground and specialized for photosynthesis. The leaves and stem together form the shoot.[2] Leaves are collectively referred to as foliage, as in "autumn foliage".[3][4] In most leaves, the primary photosynthetic tissue, the palisade mesophyll, is located on the upper side of the blade or lamina of the leaf[1] but in some species, including the mature foliage of Eucalyptus,[5] palisade mesophyll is present on both sides and the leaves are said to be isobilateral. </p>
-            </div>
-     </div>
-     
-     <footer>
-         <p>&copy; Google</p>
-     </footer>  
-    </div>    
+  <div class="flex-container">
+  
+    <div class="flexleft">
+      <a style="font-weight: 900;font-family: poppins;font-size: 30px;">More than 1000 Wordpress<br>Themes and Templates <br> <br> </a>
+      
+      <form class="example" action="/action_page.php" style="max-width:600px">
+        <input type="text" placeholder="eg Responsive Slider" name="search2">
+        <button type="submit">SEARCH</button>
+      </form>
+  
+      <a style="color: grey;"> <br> <br> <br>From multipurpose themes to niche templates 
+        <br> you'll always find something that catches your eye</a>
   </div>
- </body>
+  
+    <div style class="flexright">
+      <img src="a.jpg" />
+    </div>  
+  </div>
+  
+  <br>
+
+  
+  <div class="flex-container2">
+    <div class="fc2">
+  <p>SOME OF OUR CLIENTS ALREADY USING KLOUDONE</p><br>
+</div>
+  <div class="fc3">
+    <p> 
+    Linkedin Facebook acer Dell Forbes
+    </p><br>
+  </div>  
+  </div>
+  <br>
+
+
+    
+  <div class="flexmain">
+    <div class="vertical-menu" >
+      <g href="#" class="active">Browse Categories</g>
+      <g href="#"> <i class="fa fa-home" aria-hidden="true"></i> Home</g>
+      <g href="#"> <i class="fa fa-wordpress" aria-hidden="true"></i> Wordpress Themes</g>
+      <g href="#"> <i class="fa fa-shopping-cart" aria-hidden="true"></i> E commerce Templates</g>
+      <g href="#"> <i class="fa fa-television" aria-hidden="true"></i> Marketing Templates</g>
+      <g href="#"> <i class="fa fa-th-large" aria-hidden="true"></i> CMS Templates</g>
+      <g href="#"> <i class="fa fa-desktop" aria-hidden="true"></i> site Templates</g>
+      <g href="#" style="border-radius: 0px 0px 10px 10px;"> <i class="fa fa-pencil-square-o" aria-hidden="true"></i> Blogging</g>  
+     
+    
+      <div class="vm2">
+        <h3>Subscribe Newsletter</h3>
+        <p style="font-size: 15px;">Get all the latest information News,<br> Sales and Events</p>
+      <form  class="search" action="/action_page.php">
+          <input type="text" placeholder="Email Address" name="search"><br><br>
+          <button class="btn" type="submit">Subscribe </button>
+        </form>
+      </div>
+   
+        <div class="vm3">
+    
+          <div style="margin-left: 30%;margin-right: 30%;margin-top: 20px;" class="c100 p25 green">
+            <span>+40%</span>
+            <div class="slice">
+                <div class="bar"></div>
+                <div class="fill"></div>
+            </div>
+        </div>
+ 
+         <b style="font-size: 20px;">Monthly user in your site</b>
+          <h2 style="color: #1ac6ff;">1.0286</h2>
+          <p style="font-size: 15px;color: lightgray;">we accompany you with our <br> versatile expertise in digital marketing </p>
+        </div>
+   
+        <div class="vm4">
+          <b style="font-size: 20px;background-color: black;color: azure;display: block;border-radius: 10px 10px 0px 0px;padding: 25px;">SQUARE SPACE</b>
+          <p style="font-size: 15px;padding-top: 25px;">create a beautiful portfolio website with <br> squarespace. start your free trail </p>
+          <p style="font-size: 10px;padding-top: 25px;"> ads via carbon</p>
+         </div>
+    
+    </div>
+    <div class="flex-container3">
+     <div1 style="font-size: 15px;border-radius: 10px 0px 0px 10px;margin-left: 10px;"><p style="font-weight: 600;"><i class="fa fa-shield" aria-hidden="true"></i> Security Assurance</p>
+     <p style="color: gray;">our theme is designed for maximize Security and prevent malware</p> 
+      </div1> 
+      <div1 style="font-size: 15px;"><p style="font-weight: 600;"> <i class="fa fa-question-circle" aria-hidden="true"></i> Best customer support</p>
+     <p style="color: gray;">Need help? we are here for you! Do not worry we provide in depth answer.</p> 
+      </div1>
+      <div1 style="font-size: 15px;border-radius: 0px 10px 10px 0px;"><p style="font-weight: 600;"> <i class="fa fa-check-square-o" aria-hidden="true"></i> Great quality theme</p>
+        <p style="color: gray;font-size: 12.5px;">we will be responsible for delivering the best online user experience, which makes my role extremely important. </p>
+      </div1>  
+      <div>
+        <img style="border-radius: 5px 5px 5px 5px;height: 250px;width: 340px;" src="1.jpg"> <br>
+        <p style="font-size: medium;margin-left: 10px;font-weight: 600;">RublCons</p>
+        <p style="font-size: small;margin-left: 10px;color: lightgray;">Wordpress</p>
+        <p style="font-size: small;margin-left: 10px;color: #1ac6ff;">$29.99</p>
+      </div>
+      <div>
+        <img style="border-radius: 5px 5px 5px 5px;height: 250px;width: 340px;" src="2.jpg"> <br>
+        <p style="font-size: medium;margin-left: 10px;font-weight: 600;">Dugligan</p>
+        <p style="font-size: small;margin-left: 10px;color: lightgray;">PHP, wordpress</p>
+        <p style="font-size: small;margin-left: 10px;color: #1ac6ff;">$29.99</p>
+      </div>
+      <div>
+        <img style="border-radius: 5px 5px 5px 5px;height: 250px;width: 340px;" src="3.jpeg"> <br>
+        <p style="font-size: medium;margin-left: 10px;font-weight: 600;">Abstract Theme</p>
+        <p style="font-size: small;margin-left: 10px;color: lightgray;">PHP, wordpress</p>
+        <p style="font-size: small;margin-left: 10px;color: #1ac6ff;">$29.99</p>
+      </div>  
+      <div>
+        <img style="border-radius: 5px 5px 5px 5px;height: 250px;width: 340px;" src="4.jpg"> <br>
+        <p style="font-size: medium;margin-left: 10px;font-weight: 600;">Dugicon</p>
+        <p style="font-size: small;margin-left: 10px;color: lightgray;">PHP, wordpress</p>
+        <p style="font-size: small;margin-left: 10px;color: #1ac6ff;">$29.99</p>
+      </div>
+      <div>
+        <img style="border-radius: 5px 5px 5px 5px;height: 250px;width: 340px;" src="5.jpg"> <br>
+        <p style="font-size: medium;margin-left: 10px;font-weight: 600;">DugiApp</p>
+        <p style="font-size: small;margin-left: 10px;color: lightgray;">PHP, wordpress</p>
+        <p style="font-size: small;margin-left: 10px;color: #1ac6ff;">$29.99</p>
+      </div>
+      <div>
+        <img style="border-radius: 5px 5px 5px 5px;height: 250px;width: 340px;" src="6.jpg"> <br>
+        <p style="font-size: medium;margin-left: 10px;font-weight: 600;">Dugios</p>
+        <p style="font-size: small;margin-left: 10px;color: lightgray;">PHP, wordpress</p>
+        <p style="font-size: small;margin-left: 10px;color: #1ac6ff;">$29.99</p>
+      </div>  
+      <div>
+        <img style="border-radius: 5px 5px 5px 5px;height: 250px;width: 340px;" src="7.jpg"> <br>
+        <p style="font-size: medium;margin-left: 10px;font-weight: 600;">DugiUI</p>
+        <p style="font-size: small;margin-left: 10px;color: lightgray;">PHP, wordpress</p>
+        <p style="font-size: small;margin-left: 10px;color: #1ac6ff;">$29.99</p>
+      </div>
+      <div>
+        <img style="border-radius: 5px 5px 5px 5px;height: 250px;width: 340px;" src="8.png"> <br>
+        <p style="font-size: medium;margin-left: 10px;font-weight: 600;">WireDugi</p>
+        <p style="font-size: small;margin-left: 10px;color: lightgray;">PHP, Wordpress</p>
+        <p style="font-size: small;margin-left: 10px;color: #1ac6ff;">$29.99</p>
+      </div>
+      <div>
+        <img style="border-radius: 5px 5px 5px 5px;height: 250px;width: 340px;" src="9.png"> <br>
+        <p style="font-size: medium;margin-left: 10px;font-weight: 600;">DugiCO</p>
+        <p style="font-size: small;margin-left: 10px;color: lightgray;">PHP, Wordpress</p>
+        <p style="font-size: small;margin-left: 10px;color: #1ac6ff;">$29.99</p>
+      </div>  
+      <div>
+        <img style="border-radius: 5px 5px 5px 5px;height: 250px;width: 340px;" src="10.jpg"> <br>
+        <p style="font-size: medium;margin-left: 10px;font-weight: 600;">UI Illustraion</p>
+        <p style="font-size: small;margin-left: 10px;color: lightgray;">PHP, Wordpress</p>
+        <p style="font-size: small;margin-left: 10px;color: #1ac6ff;">$29.99</p>
+      </div> 
+      <div>
+        <img style="border-radius: 5px 5px 5px 5px;height: 250px;width: 340px;" src="11.jpg"> <br>
+        <p style="font-size: medium;margin-left: 10px;font-weight: 600;">Login Apps</p>
+        <p style="font-size: small;margin-left: 10px;color: lightgray;">PHP, Wordpress</p>
+        <p style="font-size: small;margin-left: 10px;color: #1ac6ff;">$29.99</p>
+      </div> 
+      <div>
+        <img style="border-radius: 5px 5px 5px 5px;height: 250px;width: 340px;" src="12.jpg"> <br>
+        <p style="font-size: medium;margin-left: 10px;font-weight: 600;">Analysis App</p>
+        <p style="font-size: small;margin-left: 10px;color: lightgray;">PHP, Wordpress</p>
+        <p style="font-size: small;margin-left: 10px;color: #1ac6ff;">$29.99</p>
+      </div> 
+  </div>
+  
+  </div>
+
+<br>
+
+
+ <br>
+ <div class="flex-container4">
+  
+  <div class="flexl">
+    <p style="font-size: 35px;color: #1ac6ff;font-weight: 900;line-height: 35px;">We Build app and websites</p> 
+    <p style="font-variant: normal;font-family: sans-serif;">From multipurpose themes to niche templated</p>
+    <p style="font-variant: normal;font-family: sans-serif;">you'll always find something that catches your eye.</p>  
+    <button class="btn2" type="submit">Contact us</button>
+    or see our portfolio
+</div>
+  <div class="flexr">
+    <img src="b.png" style="max-height: 400px;max-width: 400px;" >
+  </div>  
+</div>
+
+<br>
+
+<footer class="footer-distributed">
+
+  <div class="footer-left">
+
+    <h3>Envato market</h3>
+
+    <p class="footer-links">
+      <p>Terms</p>
+      <p>Licenses</p>
+      <p>Market Api</p>
+      <p>Become an affiliate</p>
+    </p>
+
+  </div>
+
+  <div class="footer-left">
+
+    <h3>Help</h3>
+
+    <p class="footer-links">
+      <p>Themes and Templates</p>
+      <p>Authours</p>
+      <p>Help center</p>
+    </p>
+
+  </div>
+
+  <div class="footer-right">
+
+    <h3>Our Community</h3>
+
+    <p class="footer-links">
+      <p>Community</p>
+      <p>Blog</p>
+      <p>Forums</p>
+      <p>Meet ups</p>
+    </p>
+
+  </div>
+
+  <div class="footer-right">
+
+    <h3>Contact</h3>
+
+    <p class="footer-links">
+      <p>sabri hakuli</p>
+      <p>sabri@outlook.com</p>
+      <p>+32 146687455</p>
+    </p>
+
+  </div>
+
+  
+  <div class="footer-iright">
+
+    <div class="footer-icons">
+
+      <a><i class="fa fa-facebook"></i></a>
+      <a><i class="fa fa-twitter"></i></a>
+      <a><i class="fa fa-linkedin"></i></a>
+      <a><i class="fa fa-github"></i></a>
+
+    </div>
+
+  </div>
+
+</footer>
+</body>
 </html>
+
+
+<!-- 
+
+   <div class="flex-container2">
+
+ <div1>
+    <h3>Subscribe Newsletter</h3>
+    <p>Get all the latest information News,<br> Sales and Events</p>
+  <form  class="search" action="/action_page.php">
+      <input type="text" placeholder="Email Address" name="search">
+      <button type="submit">Subscribe </button>
+    </form>
+</div1>
+
+</div>
+<br>
+<div class="flex-container2">
+<div1>
+  <b>Monthly user in your site</b>
+  <p>1.0286</p>
+  <p>we accompany you with our <br> versatile expertise in digital marketing </p>
+</div1>
+ 
+ </div>
+<br>
+ <div class="flex-container2">
+   <div1>
+    <b>SQUARE SPACE</b>
+    <p>create a beautiful portfolio website with <br> squarespace. start your free trail </p>
+    <p> ads via carbon</p>
+   </div1>
+
+ </div>
+
+ .flex-container4 {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: white;
+  flex-direction: row;
+}
+
+.flex-container4 > div1 {
+  margin-top: 20px;
+  text-align: center;
+  padding: 10px;
+  flex: 50%;
+  line-height: 10px;
+}
+.flex-container4 > div2 {
+  flex: 50%;
+}
+
+@media only screen and (max-width: 500px) {
+  .menu,
+  .main,
+  .flex-container .flex-container2 .flex-container3 .flex-container4 {
+    width: 100%;
+  }
+}
+
+
+  font-size: 30px;
+  height: 50%;
+  color: red;
+  width: 100%;
+  font-family: 'PT Sans Narrow', sans-serif;
+  word-spacing: 250px;
+  justify-content: space-around;
+
+  
+-->
